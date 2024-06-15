@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_now">
+
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="com.example.studynotes.Settings.SettingsFragment"
+        android:label="@string/title_settings"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_navigation_settings_to_navigation_start"
+            app:destination="@id/navigation_start" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_now"
+        android:name="com.example.studynotes.Now.NowFragment"
+        android:label="@string/title_now"
+        tools:layout="@layout/fragment_now">
+        <action
+            android:id="@+id/action_navigation_now_to_navigation_add_tasks"
+            app:destination="@id/navigation_add_tasks" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_start"
+        android:name="com.example.studynotes.Start.StartFragment"
+        android:label="@string/title_start"
+        tools:layout="@layout/fragment_start" />
+
+    <fragment
+        android:id="@+id/navigation_add_tasks"
+        android:name="com.example.studynotes.AddTasks.AddTasksFragment"
+        android:label="@string/title_add_tasks"
+        tools:layout="@layout/fragment_add_tasks" />
+
+</navigation>

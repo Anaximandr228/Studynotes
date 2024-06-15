@@ -1,0 +1,9 @@
+<resources>
+
+    <string name="app_name">Studynotes</string>
+    <string name="title_now">Заметки</string>
+    <string name="title_settings">Настройки</string>
+    <string name="title_start">Группы</string>
+    <string name="title_add_tasks">Заметки</string>
+
+</resources>

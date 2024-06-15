@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/selection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="100dp"
+        android:textSize="26sp"
+        android:fontFamily="@font/roboto_regular"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Spinner
+        android:id="@+id/lessons_spinner"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/custom_spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/tasksname"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/customedittext"
+        android:ems="10"
+        android:fontFamily="@font/roboto_regular"
+        android:inputType="text"
+        android:paddingStart="20dp"
+        android:paddingEnd="20px"
+        android:hint="Заголовок"
+        android:textSize="19dp"
+        android:imeOptions="actionGo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lessons_spinner" />
+
+    <EditText
+        android:id="@+id/taskstext"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/customedittext"
+        android:ems="10"
+        android:inputType="text"
+        android:paddingStart="20dp"
+        android:paddingEnd="20px"
+        android:hint="Текст"
+        android:textSize="19dp"
+        android:fontFamily="@font/roboto_regular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tasksname" />
+
+    <Button
+        android:id="@+id/datesetbutton"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/custom_button"
+        android:text="Установите дату"
+        android:textSize="19dp"
+        android:textColor="@color/gray"
+        android:fontFamily="@font/roboto_bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/taskstext" />
+
+    <Button
+        android:id="@+id/savetask"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Добавить задачу"
+        android:textColor="@color/gray"
+        android:textSize="19dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/datesetbutton" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
